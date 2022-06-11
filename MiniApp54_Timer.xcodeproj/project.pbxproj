@@ -13,9 +13,11 @@
 		87DF8FF2285494AC0048B681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DF8FF0285494AC0048B681 /* Main.storyboard */; };
 		87DF8FF4285494AD0048B681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87DF8FF3285494AD0048B681 /* Assets.xcassets */; };
 		87DF8FF7285494AD0048B681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DF8FF5285494AD0048B681 /* LaunchScreen.storyboard */; };
+		B999C08561CFE66CEFFCE4E5 /* Pods_MiniApp54_Timer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B20B4961162D3642BDECD0 /* Pods_MiniApp54_Timer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67B20B4961162D3642BDECD0 /* Pods_MiniApp54_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniApp54_Timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DF8FE7285494AC0048B681 /* MiniApp54_Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniApp54_Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DF8FEA285494AC0048B681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87DF8FEC285494AC0048B681 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		87DF8FF3285494AD0048B681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87DF8FF6285494AD0048B681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87DF8FF8285494AD0048B681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA68CE9BAADCEFD14F74E8C /* Pods-MiniApp54_Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniApp54_Timer.release.xcconfig"; path = "Target Support Files/Pods-MiniApp54_Timer/Pods-MiniApp54_Timer.release.xcconfig"; sourceTree = "<group>"; };
+		FD022B521AD59156B9429E3B /* Pods-MiniApp54_Timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniApp54_Timer.debug.xcconfig"; path = "Target Support Files/Pods-MiniApp54_Timer/Pods-MiniApp54_Timer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B999C08561CFE66CEFFCE4E5 /* Pods_MiniApp54_Timer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		535020320AB7453FF4C09EB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67B20B4961162D3642BDECD0 /* Pods_MiniApp54_Timer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FA970E7C737FBA56CF180D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD022B521AD59156B9429E3B /* Pods-MiniApp54_Timer.debug.xcconfig */,
+				FAA68CE9BAADCEFD14F74E8C /* Pods-MiniApp54_Timer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		87DF8FDE285494AC0048B681 = {
 			isa = PBXGroup;
 			children = (
 				87DF8FE9285494AC0048B681 /* MiniApp54_Timer */,
 				87DF8FE8285494AC0048B681 /* Products */,
+				7FA970E7C737FBA56CF180D7 /* Pods */,
+				535020320AB7453FF4C09EB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87DF8FFB285494AD0048B681 /* Build configuration list for PBXNativeTarget "MiniApp54_Timer" */;
 			buildPhases = (
+				405A312BC8AF1459DA15087A /* [CP] Check Pods Manifest.lock */,
 				87DF8FE3285494AC0048B681 /* Sources */,
 				87DF8FE4285494AC0048B681 /* Frameworks */,
 				87DF8FE5285494AC0048B681 /* Resources */,
+				87F844ABC2C29AEC3EDF8943 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		405A312BC8AF1459DA15087A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiniApp54_Timer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87F844ABC2C29AEC3EDF8943 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniApp54_Timer/Pods-MiniApp54_Timer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniApp54_Timer/Pods-MiniApp54_Timer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiniApp54_Timer/Pods-MiniApp54_Timer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87DF8FE3285494AC0048B681 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		87DF8FFC285494AD0048B681 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD022B521AD59156B9429E3B /* Pods-MiniApp54_Timer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		87DF8FFD285494AD0048B681 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAA68CE9BAADCEFD14F74E8C /* Pods-MiniApp54_Timer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
